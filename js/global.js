@@ -5,10 +5,14 @@
 var maxRound = 2; //Сколько кругов нужно проехать
 var botSpeed = 0; //Скорость бота относительно игрока
 
+// Холст
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 canvas.width = 800;
 canvas.height = 600;
+
+// Переменные
+// var cpointGroup, CarObject;
 
 // загрузка спрайтов
 var spriteImage = new Image();
