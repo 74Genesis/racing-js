@@ -321,9 +321,9 @@ var CarCollection = Backbone.Collection.extend({
 				// Движение вперед и поворот
 				newX -= Math.cos(newAngle) * (Number(model.get("speed")) + botSpeed) * dt;
 				newY -= Math.sin(newAngle) * (Number(model.get("speed")) + botSpeed) * dt; 
-				var botRotate = 0.04;
+				var botRotate = 0.0028 * dt;
 				if (sideRotate[1] < 0.1) {
-					botRotate = 0.01;
+					botRotate = 0.0015 * dt;
 				}
 				if (sideRotate[0] == "+") {
 					newAngle += botRotate;
